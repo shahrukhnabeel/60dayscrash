@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        #filter{
+            display: flex;
+            
+        }
+        #tab{
+            width: 100;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Employee Management System</h1>
+    </div>
+    <div id="filter">
+        <p>Filter by Department:</p>
+        <p><select name="" id="select1">
+            <option value="">--Select Department--</option>
+            <option value="">hr</option>
+             <option value="">finance</option>
+               <option value="">-- engineering--</option>
+            <option value="">hr</option>
+             
+            <option value="">operations</option>
+             
+        </select></p>
+        <p>Filter by Gender:</p>
+        <p><select name="" id="select2">
+            <option value="">gender</option>
+            <option value="">male</option>
+            <option value="">Female</option>
+        </select></p>
+        <p>Sort by Salary:</p>
+        <select name="" id="select3">
+            <option value="">Low to High</option>
+            <option value="">High to Low</option>
+        </select>
+    </div>
+    <div id="tab">
+        <table>
+            <th>
+                
+                    <td>S.no.</td>
+                    <td>Name</td>
+                    <td>Gender</td>
+                    <td>Depatment</td>
+                    <td>Salary</td>
+                
+            </th>
+            <tr>
+
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./employees.js"></script>
+</html>
