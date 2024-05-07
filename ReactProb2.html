@@ -11,8 +11,9 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
       let root=document.getElementById('root');
+      let data='Seize the day';
       const reactRoot=ReactDOM.createRoot(root)
-      let p=<p>Seize the day</p>
+      let p=<p>{data}</p>
       reactRoot.render(p)
     </script>
   </body>
