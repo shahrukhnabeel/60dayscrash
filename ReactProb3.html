@@ -10,14 +10,15 @@
     <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+        function handleClick(){
+            alert('Hello')
+        }
       let root=document.getElementById('root');
-      // let data='Seize the day';
-      // const reactRoot=ReactDOM.createRoot(root)
-      // let p=<p>{data}</p>
-      // reactRoot.render(p)
-      let flag=true
-      let element=flag?<p>Sieze the Day</p>:<p>Good Day</p>
-
+      let element=<>
+      <p>React is a javascript library</p>
+      <div className='main'>
+        <p>Click the below button to alert 'Hello'</p>
+        <button onClick={handleClick}>Alert Hello</button></div></>
       const reactRoot=ReactDOM.createRoot(root);
       reactRoot.render(element)
     </script>
